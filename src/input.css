@@ -1,0 +1,193 @@
+@import "tailwindcss";
+
+/* Dark variant */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+/* =========================
+   Light Theme (Default)
+========================= */
+@theme {
+  /* Header */
+  --color-header: hsl(0 0% 100%);
+
+  /* Backgrounds */
+  --color-primary: hsl(206 50% 94%);
+  --color-secondary: hsl(187 90% 96%);
+  --color-ternary: hsl(210 20% 98%);
+
+  /* Brand */
+  --color-btn: hsl(221 97% 54%);
+  --color-mark-text: hsl(221 97% 54%);
+
+  /* Icons */
+  --color-bg-icon: hsl(214 95% 93%);
+  --color-icon: hsl(221 97% 54%);
+
+  /* Text */
+  --color-text-primary: hsl(220 43% 11%);
+  --color-text-secondary: hsl(216 15% 34%);
+
+  /* Gradient */
+  --color-grad-primary: hsl(211 100% 45%);
+  --color-grad-secondry: hsl(200 100 40%);
+
+  /* =========================
+   Dark Theme (Exact Values)
+========================= */
+
+  /* Header */
+  --color-dark-header: hsl(221 28% 16%);
+
+  /* Backgrounds */
+  --color-dark-primary: hsl(220 43% 11%);
+  --color-dark-secondary: hsl(216 31% 17%);
+  --color-dark-ternary: hsl(225 67% 33%);
+  /* ✅ FIXED */
+
+  /* Brand */
+  --color-dark-btn: hsl(221 97% 54%);
+  --color-dark-mark-text: hsl(188 100% 48%);
+
+  /* Icons */
+  --color-dark-bg-icon: hsl(223 58% 18%);
+  --color-dark-icon: hsl(188 100% 48%);
+
+  /* Text */
+  --color-dark-text-primary: hsl(0 0% 100%);
+  --color-dark-text-secondary: hsl(218, 14%, 84%);
+  --color-dark-nav: hsl(218, 14%, 84%);
+
+  /* Gradient */
+  --color-dark-grad-primary: hsl(215 70% 29%);
+  --color-dark-grad-secondry: hsl(199 72% 24%);
+
+  --color-sun: hsl(44, 100%, 47%);
+  --color-dark-links: hsl(216, 31%, 17%);
+  --color-links: hsl(214, 100%, 97%);
+}
+
+[aria-current="page"] {
+  @apply text-icon dark:text-dark-icon;
+}
+
+[aria-current="mobile-page"] {
+  @apply text-icon dark:text-dark-icon bg-links dark:bg-dark-links;
+}
+
+.container {
+  @apply w-19/20 sm:w-17/20 m-auto;
+}
+
+.booking-btn {
+  @apply bg-btn rounded-4xl text-dark-text-primary hover:bg-btn/80 cursor-pointer duration-500;
+}
+
+.more-btn {
+  @apply border-2 py-3 px-10 border-mark-text dark:border-dark-mark-text text-mark-text dark:text-dark-mark-text rounded-4xl hover:bg-mark-text/15 dark:hover:bg-dark-mark-text/15 duration-500;
+}
+
+.nav-links {
+  @apply hover:text-icon dark:hover:text-dark-icon duration-500;
+}
+
+.mobile-nav-link {
+  @apply hover:text-icon dark:hover:text-dark-icon duration-500 hover:bg-links dark:hover:bg-dark-links p-3 rounded-md;
+}
+
+.header-section {
+  @apply flex flex-col justify-center items-center gap-5
+}
+
+.title {
+  @apply text-5xl lg:text-6xl;
+}
+
+.header-section h2 {
+  @apply text-4xl lg:text-5xl;
+}
+
+.header-section p,
+.subtitle {
+  @apply text-text-secondary dark:text-dark-text-secondary text-xl text-center;
+}
+
+.img-box {
+  @apply w-full lg:w-120 m-auto h-100 lg:h-120 object-cover object-top rounded-3xl shadow-lg shadow-black/30 overflow-hidden;
+}
+
+.gallary-box {
+  @apply relative w-full m-auto h-80 rounded-3xl dark:shadow-lg dark:shadow-black/30 overflow-hidden flex justify-center items-center bg-gray-200;
+}
+
+.overlay {
+  @apply hover:bg-gradient-to-t from-black/70 to-transparent absolute w-full h-full bottom-0 duration-500;
+}
+
+
+section {
+  @apply py-15
+}
+
+.service-card {
+  @apply bg-white dark:bg-dark-primary shadow-md rounded-2xl flex flex-col p-8 gap-4 hover:shadow-lg duration-500 hover:-translate-y-1;
+}
+
+.testimonial-box {
+  @apply w-10/12 text-center bg-white dark:bg-dark-primary shadow-md rounded-2xl flex flex-col p-8 gap-4 hover:shadow-lg duration-500;
+}
+
+.slider-btn {
+  @apply bg-white dark:bg-dark-primary w-12 h-12 flex flex-col justify-center items-center shadow shadow-gray-200 dark:shadow-black rounded-full hover:scale-110 duration-500 cursor-pointer absolute;
+}
+
+.service-card div,
+.contact-item .contact-icon {
+  @apply bg-bg-icon dark:bg-dark-bg-icon group-hover:scale-110 duration-500 w-16 h-16 flex items-center justify-center rounded-2xl;
+}
+
+.service-card i,
+.contact-item i {
+  @apply group-hover:scale-110 duration-500 text-mark-text dark:text-dark-mark-text text-2xl;
+}
+
+.service-card h3,
+.contact-item h3 {
+  @apply text-lg;
+}
+
+.service-card p,
+.contact-item p {
+  @apply text-text-secondary dark:text-dark-text-secondary;
+}
+
+.service-card a {
+  @apply text-mark-text dark:text-dark-mark-text hover:underline duration-500;
+}
+
+.contact-item {
+  @apply flex gap-4
+}
+
+.contact-details {
+  @apply flex flex-col gap-2 justify-between
+}
+
+.input-box {
+  @apply flex flex-col gap-2
+}
+
+.input-style {
+  @apply ring-1 ring-gray-300 dark:ring-gray-600 rounded-lg text-lg p-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-dark-secondary
+}
+
+.faq-accordion details {
+  @apply flex flex-col bg-white dark:bg-dark-secondary shadow-lg shadow-black/10 overflow-hidden rounded-xl mb-4;
+}
+
+.faq-accordion summary {
+  @apply flex justify-between text-lg hover:bg-gray-100 dark:hover:bg-gray-400 py-4 px-6 cursor-pointer duration-500;
+}
+
+.faq-accordion p {
+  @apply pb-6 px-6 text-base text-text-secondary dark:text-dark-text-secondary;
+}

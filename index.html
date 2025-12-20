@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark" class="" locale="ar-EG" loading="lazy">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> دكتور تؤأم - الصفحة الرئيسية</title>
+
+    <!-- fontawesome  cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- style cdn  -->
+    <link rel="stylesheet" href="dist/output.css">
+
+    <!-- aos cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+    <!-- favicons  -->
+    <link rel="icon" type="image/png" href="/Favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/Favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/Favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/Favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Toams" />
+    <link rel="manifest" href="/Favicons/site.webmanifest" />
+
+    <!-- meta desc -->
+    <meta name="description"
+        content="د. محمود رأفت - استشاري نساء وتوليد وتأخر إنجاب وأطفال الأنابيب وحقن مجهري في اسيوط  مصر">
+</head>
+
+<body class="  text-text-primary dark:text-dark-text-primary  dark:bg-dark-primary">
+    <!-- Sultan: rember to check if using div is important in design or not -->
+
+    <!-- header -->
+    <header class="site-header  bg-header dark:bg-dark-header  h-20  shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container flex flex-row items-center  justify-between w-full h-full ">
+            <!-- logo -->
+            <div class="logo-container">
+                <a href="index.html" title="الصفحة الرئيسية" class="logo" aria-label="دكتور تؤأم - الصفحة الرئيسية">
+                    <img src="Favicons/favicon.svg" alt=" شعار دكتور تؤام" class="w-20  h-auto ">
+                </a>
+            </div>
+            <!-- navbar -->
+            <nav class="lg:flex flex-row  gap-10  hidden dark:text-dark-nav   ">
+                <a class="nav-links" href="index.html" aria-current="page">الرئيسية</a>
+                <a class="nav-links" href="public/services.html">الخدمات</a>
+                <a class="nav-links" href="public/about.html">عن الدكتور</a>
+                <a class="nav-links" href="public/gallery.html">المعرض</a>
+                <a class="nav-links" href="public/stories.html">قصص النجاح</a>
+                <a class="nav-links" href="public/booking.html">احجز الان</a>
+            </nav>
+
+            <!-- actions -->
+            <div class="flex flex-row items-center">
+
+                <!-- mode btn -->
+                <button id="modeBtn" title="وضع الصبح"
+                    class="text-xl p-1.5 m-4 rounded-lg hover:bg-gray-300  cursor-pointer dark:hover:bg-gray-900">
+                    <i class="far fas fa-soon  dark:text-sun"></i>
+                </button>
+
+                <!-- toggle btn -->
+                <button id="toggle-btn" title="اظهار القائمة"
+                    class="text-2xl p-1.5  rounded-lg hover:bg-gray-300  cursor-pointer dark:hover:bg-gray-900 lg:hidden">
+                    <i class="fa-solid fa-bars fa-xmark "></i>
+                </button>
+
+                <!-- booking btn -->
+                <a href="public/booking.html" class="booking-btn  px-7 py-2   hidden lg:block   ">احجز موعدك</a>
+
+            </div>
+
+        </div>
+    </header>
+    <!-- nav of mobile -->
+    <nav id="mobileNav" class=" hidden  fixed top-20 left-0 w-full bg-header dark:bg-dark-header
+          py-3 shadow-md z-60 lg:hidden ">
+        <div class="container flex flex-col gap-2 pt-3 border-t-1 ">
+            <a href="index.html" class="mobile-nav-link" aria-current="mobile-page">الرئيسية</a>
+            <a href="public/services.html" class="mobile-nav-link">الخدمات</a>
+            <a href="public/about.html" class="mobile-nav-link">عن الدكتور</a>
+            <a href="public/gallery.html" class="mobile-nav-link">المعرض</a>
+            <a href="public/stories.html" class="mobile-nav-link">قصص النجاح</a>
+            <a href="public/booking.html" class="mobile-nav-link">احجز الان</a>
+
+        </div>
+    </nav>
+
+    <!-- main content -->
+    <main class="mt-20   ">
+        <!-- hero section -->
+        <section class="hero-section bg-primary dark:bg-dark-primary  flex justify-center  lg:h-[calc(100vh-80px)]   "
+            aria-labelledby="hero-title">
+            <div class="container grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div class="hero-grid lg:px-10 h-full">
+                    <article class="hero-content flex flex-col  h-full justify-evenly gap-10 lg:gap-0 items-start   ">
+                        <h1 id="hero-title" class="title  leading-tight">
+                            رعاية صحية
+                            <br>
+                            <span class=" text-mark-text  dark:text-dark-mark-text"> متميزة وموثوقة</span>
+                        </h1>
+                        <p class="subtitle  ">
+                            د. محمود رافت - استشاري نساء وتوليد وتأخر الإنجاب وأطفال الأنابيب
+                            أكثر من 15 سنة خبرة في تحقيق حلم الأمومة والأبوة </p>
+                        <div class="hero-links flex flex-row flex-wrap gap-4 ">
+                            <a href="public/booking.html"
+                                class="booking-btn px-10 py-3  duration-500 hover:scale-105">احجز موعد الآن</a>
+                            <a href="public/services.html" class="more-btn">تصفح
+                                خدماتنا</a>
+                        </div>
+                        <p>
+                            <i class="far fa-clock text-mark-text dark:text-dark-mark-text"></i>
+                            <time datetime="9:00-22:00" class="text-text-secondary dark:text-dark-text-secondary"> السبت
+                                - الخميس : 9 صباحا - 10 مساءً</time>
+                        </p>
+                    </article>
+                </div>
+
+                <figure class="hero-image flex justify-center items-center relative ">
+
+                    <div class="img-box ">
+                        <img src="img/Doctor.jpeg" loading="lazy" decoding="async" alt="دكتور محمود رافت"
+                            class="w-full h-auto ">
+                    </div>
+                    <div
+                        class=" flex flex-row items-end pb-2 w-full lg:w-120 rounded-b-3xl  absolute bottom-0 bg-gradient-to-t from-black/70 to-transparent ">
+                        <img src="Favicons/logoWithTitle.png" alt="" class="w-18 h-18 bg-cover ">
+                        <div class="text-white flex flex-col gap-2 font-semibold mb-3">
+                            <h1>د. محمود رافت</h1>
+                            <p>استشاري متخصص</p>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <!-- stats Bar -->
+        <section class="stats-bar bg-mark-text dark:bg-dark-ternary text-white " aria-label="إحصائيات العيادة">
+            <div class="container  grid place-items-center grid-cols-2 lg:grid-cols-4 gap-7 text-center">
+                <div class="stat flex flex-col gap-1 ">
+                    <p class=" text-4xl lg:text-5xl">+15</p>
+                    <p class="text-dark-text-secondary">سنوات خبرة</p>
+                </div>
+                <div class="stat flex flex-col gap-1 ">
+                    <p class=" text-4xl lg:text-5xl">+5000</p>
+                    <p class="text-dark-text-secondary">مريض سعيد</p>
+                </div>
+                <div class="stat flex flex-col gap-1 ">
+                    <p class=" text-4xl lg:text-5xl">98%</p>
+                    <p class="text-dark-text-secondary">نسبة النجاح</p>
+                </div>
+                <div class="stat flex flex-col gap-1 ">
+                    <p class=" text-4xl lg:text-5xl">24/7</p>
+                    <p class="text-dark-text-secondary">دعم متواصل</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- service section -->
+        <section aria-labelledby="services-title" class="bg-ternary dark:bg-dark-secondary">
+            <div class="container">
+                <div class="header-section  ">
+                    <h2 id="services-title">خدماتنا الطبية </h2>
+                    <p>نقدم مجموعة شاملة من الخدمات الطبية المتخصصة بأعلي معايير الجودة</p>
+                </div>
+
+                <div class="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-15 gap-7">
+                    <article class="service-card group">
+                        <div class="">
+                            <i class="fas fa-stethoscope "></i>
+                        </div>
+                        <h3 class="text-lg">الكشف والاستشارة</h3>
+                        <p class=" ">فحص شامل وتشخيص دقيق مع خطة علاج مخصصة حسب حالتك</p>
+                        <a href="public/booking.html" class="btn-link ">احجز الآن ←</a>
+                    </article>
+                    <article class="service-card group">
+                        <div class="">
+                            <i class="fas fa-hand-holding-medical "></i>
+                        </div>
+                        <h3>العمليات الجراحية</h3>
+                        <p>جراحات دقيقة بأحدث تقنيات المناظير والجراحة المجهرية</p>
+                        <a href="public/booking.html" class="btn-link">احجز الآن ←</a>
+                    </article>
+                    <article class="service-card group">
+                        <div class="">
+                            <i class="far fa-heart "></i>
+                        </div>
+                        <h3>الفحوصات الطبية</h3>
+                        <p>تحاليل هرمونات، سونار 4D، فحوصات شاملة للخصوبة</p>
+                        <a href="public/booking.html" class="btn-link">احجز الآن ←</a>
+                    </article>
+                    <article class="service-card group">
+                        <div class="">
+                            <i class="fas fa-calendar-check "></i>
+                        </div>
+                        <h3>المتابعة الدورية</h3>
+                        <p>متابعة منتظمة لحالة الحمل أو خطة العلاج بكل اهتمام</p>
+                        <a href="public/booking.html" class="btn-link">احجز الآن ←</a>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- gallery section -->
+        <section aria-labelledby="gallery-title ">
+            <div class="container flex flex-col items-center gap-14">
+                <div class="header-section ">
+                    <h2 id="gallery-title">معرض العيادة</h2>
+                    <p> تعرف على عيادتنا المجهزة بأحدث التقنيات </p>
+                </div>
+                <figure class="grid grid-cols-1 md:grid-cols-3 gap-7 w-full ">
+                    <div class="gallary-box group">
+                        <img src="img/clinic.jpeg"
+                            class="object-cover group-hover:scale-110 duration-500 object-center w-full h-full" alt="">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="gallary-box group">
+                        <img src="img/notFound.svg"
+                            class="object-cover group-hover:scale-110 duration-500 object-center " alt="">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="gallary-box group">
+                        <img src="img/notFound.svg"
+                            class="object-cover group-hover:scale-110 duration-500 object-center  " alt="">
+                        <div class="overlay"></div>
+                    </div>
+                </figure>
+                <a href="public/gallery.html" class="more-btn  m-auto ">عرض المزيد</a>
+            </div>
+        </section>
+
+        <!-- testimonials section  -->
+        <section
+            class="testimonials md:h-[calc(100vh-100px)] flex flex-col items-center bg-gradient-to-b from-grad-primary dark:from-dark-grad-primary to-grad-secondry dark:to-dark-grad-secondry"
+            aria-labelledby="testimonials-title">
+            <div class="container flex flex-col items-center gap-15">
+                <div class="header-section ">
+                    <h2 id="testimonials-title" class="section-title text-white">آراء مرضانا</h2>
+                    <p class="!text-white/80">نعتز بثقة مرضانا ونفخر بقصص نجاحهم معنا</p>
+                </div>
+                <div class="testimonial-slider  flex flex-row justify-center items-center gap-7 w-full relative ">
+                    <a id="testMoveRight" class="slider-btn right-0  " aria-label="التالي" title="التالي">
+                        <i class="fas fa-chevron-right text-xl   "></i>
+                    </a>
+                    <blockquote class="testimonial-box active   flex flex-col gap-4 py-4">
+                        <div class="stars text-yellow-400 text-3xl " aria-label="تقييم 5 نجوم">★ ★ ★ ★ ★</div>
+                        <p class="text-xl dark:text-white/80 ">“ دكتور توأم فعلاً غيّر حياتنا، بعد 9 سنين تأخر إنجاب
+                            ربنا كرمنا بتوأم بفضله ”</p>
+                        <cite>احمد محمد - 2025</cite>
+                    </blockquote>
+                    <!-- يمكن إضافة المزيد مع JS للـ slider -->
+                    <a id="testMoveLeft" class="slider-btn left-0" aria-label="السابق" title="السابق">
+                        <i class="fas fa-chevron-left text-xl   "></i>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Form  -->
+        <section class="booking-section bg-ternary dark:bg-dark-secondary" aria-labelledby="booking-title">
+            <div
+                class="container  max-w-4xl bg-white dark:bg-dark-primary py-14 px-4 md:p-14 rounded-2xl shadow-lg shadow-black/20 flex flex-col gap-14">
+                <div class="header-section ">
+                    <h2 id="booking-title" class="section-title">احجز موعدك الآن</h2>
+                </div>
+                <form class="booking-form  " action="#" method="POST" name="booking-form">
+                    <div class="form-grid grid grid-cols-1 md:grid-cols-2  gap-7 mb-7">
+                        <div class="input-box">
+                            <label for="full-name"> الاسم الكامل</label>
+                            <input type="text" class="input-style" placeholder="ادخل اسمك" id="full-name"
+                                name="full-name" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="phone">رقم الجوال</label>
+                            <input type="tel" class="input-style" placeholder="+20 123 4567 891" id="phone" name="phone"
+                                required>
+                        </div>
+                        <div class="input-box">
+                            <label for="service-type">نوع الخدمة</label>
+                            <select title=" اختر الخدمة" class="input-style" name="service" required>
+                                <option hidden>اختر الخدمة</option>
+                                <option>كشف نساء وتوليد</option>
+                                <option>حقن مجهري</option>
+                                <option>متابعة حمل</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <label for="date">التاريخ</label>
+                            <input title="اختر التاريخ" id="date" class="input-style" type="date" name="date" required>
+                        </div>
+                        <div class="input-box md:col-span-2">
+                            <label for="notes">ملاحظات</label>
+                            <textarea class=" input-style py-4" id="notes" name="note"
+                                placeholder="ملاحظات إضافية (اختياري)" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit"
+                        class="btn-primary w-full booking-btn text-center bg-mark-text py-4 !rounded-xl">إرسال طلب
+                        الحجز</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Frequently  Questions -->
+        <section class="faq-section" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="header-section">
+                    <h2 id="faq-title">الأسئلة الشائعة</h2>
+                </div>
+                <div class="faq-accordion mt-7">
+                    <details class="">
+                        <summary class="">ما هي إجراءات الحجز في العيادة؟ <span
+                                class="text-mark-text dark:text-dark-mark-text text-2xl">+</span></summary>
+                        <p class=" ">يمكنك الحجز عبر نموذج الحجز على الموقع أو الاتصال بنا مباشرةً.</p>
+                    </details>
+                    <details>
+                        <summary>هل تقدمون استشارات عبر الإنترنت؟ <span
+                                class="text-mark-text dark:text-dark-mark-text text-2xl">+</span></summary>
+                        <p>نعم، نوفر استشارات طبية عبر الإنترنت للمرضى الذين لا يستطيعون زيارة العيادة.</p>
+                    </details>
+                    <details>
+                        <summary>ما هي طرق الدفع المتاحة؟ <span
+                                class="text-mark-text dark:text-dark-mark-text text-2xl">+</span></summary>
+                        <p>نقبل الدفع نقدًا، وبطاقات الائتمان، والتحويلات البنكية.</p>
+                    </details>
+                    <details>
+                        <summary>هل العيادة مجهزة بأحدث التقنيات؟ <span
+                                class="text-mark-text dark:text-dark-mark-text text-2xl">+</span></summary>
+                        <p>نعم، نستخدم أحدث الأجهزة والتقنيات الطبية لضمان أفضل رعاية لمرضانا.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information-->
+        <section class="contact-info" aria-labelledby="contact-title">
+            <div class="container grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div class="">
+                    <div class="header-section  !justify-start !items-start">
+                        <h2 class="title" id="contact-title" class="section-title">تواصل معنا</h2>
+                        <p class="section-subtitle !text-right ">نحن هنا لمساعدتك في أي استفسار أو حجز موعد</p>
+                    </div>
+                    <div class="contact-grid grid grid-cols-1 gap-7 mt-7">
+                        <div class="contact-item ">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details ">
+                                <h3>اتصل بنا</h3>
+                                <p dir="ltr">+20 123 456 789</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details ">
+                                <h3>العنوان</h3>
+                                <p>القاهرة - مدينة نصر</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="far fa-clock"></i>
+                            </div>
+                            <div class="contact-details ">
+                                <h3>ساعات العمل</h3>
+                                <p>السبت - الخميس : 9 صباحا - 10 مساءً</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map w-full h-100 rounded-2xl overflow-hidden shadow-lg shadow-black/20 ">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3537.2938299972075!2d30.812180000000005!3d27.553390000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDMzJzEyLjIiTiAzMMKwNDgnNDMuOSJF!5e0!3m2!1sar!2seg!4v1766268626698!5m2!1sar!2seg"
+                        class="w-full h-full" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+
+        <!--  Final CTA -->
+        <section class="relative ">
+            <div class="container text-center">
+                <!-- Header -->
+                <div class="header-section mb-8">
+                    <h2 class="title">
+                        هل أنتِ مستعدة لبدء رحلة العلاج؟
+                    </h2>
+                    <p class="subtitle">
+                        احجزي موعدك الآن وابدئي الخطوة الأولى نحو تحقيق حلم الأمومة
+                    </p>
+                </div>
+                <!-- CTA Button -->
+                <a href="public/booking.html" class="booking-btn inline-block px-12 py-4 text-lg shadow-lg
+             hover:scale-105 hover:shadow-xl duration-500">
+                    احجزي موعدك الآن
+                </a>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!--  Footer  -->
+    <footer class="site-footer bg-text-primary dark:bg-black text-white py-10 px-5">
+        <div class="container">
+            <div class="footer-grid grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div class="footer-col sm:col-span-3 lg:col-span-1">
+                    <img src="Favicons/favicon.svg" alt="شعار عيادة د.محمود رافت" class="w-24 h-auto mb-4">
+                    <p class="text-text-secondary dark:text-dark-text-secondary">نقدم أفضل خدمات النساء والتوليد والحقن
+                        المجهري في اسيوط بأحدث التقنيات العالمية .</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="font-semibold text-xl">روابط سريعة</h4>
+                    <nav class="flex flex-col gap-2 pt-4 text-text-secondary dark:text-dark-text-secondary  ">
+                        <a class="hover:text-white duration-300 " href="index.html">الرئيسية</a>
+                        <a class="hover:text-white duration-300 " href="public/services.html">الخدمات</a>
+                        <a class="hover:text-white duration-300 " href="public/about.html">عن الدكتور</a>
+                        <a class="hover:text-white duration-300 " href="public/stories.html">قصص النجاح</a>
+                    </nav>
+                </div>
+                <div class="footer-col">
+                    <h4 class="font-semibold text-xl">خدماتنا</h4>
+                    <ul class="flex flex-col gap-2 pt-4 text-text-secondary dark:text-dark-text-secondary  ">
+                        <li>الكشف والاستشارة</li>
+                        <li>العمليات الجراحية</li>
+                        <li>الفحوصات الطبية</li>
+                        <li>المتابعة الدورية</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="font-semibold text-xl">تواصل معنا</h4>
+                    <div class="flex items-center gap-2 my-2  text-text-secondary dark:text-dark-text-secondary  ">
+                        <i class="fas fas fa-phone-alt"></i>
+                        <p dir="ltr" class="">+20 123 456 789</p>
+                    </div>
+                    <div class="flex items-center gap-2 my-2  text-text-secondary dark:text-dark-text-secondary  ">
+                        <i class="far fa-envelope"></i>
+                        <p dir="ltr" class="">info@dtwaam.com</p>
+                    </div>
+                    <div class="flex items-center gap-2 my-2  text-text-secondary dark:text-dark-text-secondary  ">
+                        <i class=" fas fa-map-marker-alt"></i>
+                        <p dir="ltr" class="">اسيوط - ديروط</p>
+                    </div>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="copyright border-t-1 text-center pt-4 text-text-secondary dark:text-dark-text-secondary  ">
+                <p>© 2025 عيادة د. توأم الطبيب - جميع الحقوق محفوظة</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- aos js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+        // theme toggle
+        const html = document.documentElement;
+        const toggleBtn = document.getElementById('modeBtn');
+
+        // init theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            html.dataset.theme = savedTheme;
+        } else {
+            html.dataset.theme = window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light';
+        }
+
+        // update icon based on theme
+        function updateIcon(theme) {
+            const icon = toggleBtn.querySelector('i');
+            if (theme === 'dark') {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                toggleBtn.title = 'وضع الصبح';
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                toggleBtn.title = 'وضع الليل';
+            }
+        }
+        updateIcon(html.dataset.theme);
+
+        // toggle theme on button click
+        toggleBtn.addEventListener('click', () => {
+            const newTheme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+            html.dataset.theme = newTheme;
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        // mobile nav toggle
+        const mobileNav = document.getElementById('mobileNav');
+        const toggleNavBtn = document.getElementById('toggle-btn');
+        toggleNavBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('hidden');
+            toggleNavBtn.querySelector('i').classList.toggle('fa-bars');
+        });
+    </script>
+</body>
+
+</html>
