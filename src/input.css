@@ -29,7 +29,9 @@
 
   /* Gradient */
   --color-grad-primary: hsl(211 100% 45%);
-  --color-grad-secondry: hsl(200 100 40%);
+  --color-grad-secondry: hsl(192, 100%, 44%);
+  --color-btn-grad-primary: hsl(212, 100%, 56%);
+  --color-btn-grad-secondry: hsl(192, 100%, 44%);
 
   /* =========================
    Dark Theme (Exact Values)
@@ -82,8 +84,24 @@
   @apply bg-btn rounded-4xl text-dark-text-primary hover:bg-btn/80 cursor-pointer duration-500;
 }
 
+.submit-btn{
+  @apply  bg-gradient-to-r from-grad-primary  to-grad-secondry cursor-pointer duration-500 hover:opacity-70 rounded-lg w-full py-4 
+}
+
+.cta-btn {
+  @apply py-4 rounded-4xl bg-white hover:bg-white/90 !text-mark-text font-semibold px-10 cursor-pointer duration-500;
+}
+
 .more-btn {
   @apply border-2 py-3 px-10 border-mark-text dark:border-dark-mark-text text-mark-text dark:text-dark-mark-text rounded-4xl hover:bg-mark-text/15 dark:hover:bg-dark-mark-text/15 duration-500;
+}
+
+.tab-btn {
+  @apply bg-gray-100 dark:bg-dark-secondary dark:hover:bg-gray-700 hover:bg-gray-200 duration-500 aria-selected:bg-btn aria-selected:hover:bg-btn aria-selected:text-white aria-selected:shadow aria-selected:scale-105 aria-selected:shadow-black/70 py-3 px-7 rounded-3xl;
+}
+
+.time-btn {
+  @apply bg-gray-100 dark:bg-dark-primary dark:hover:bg-gray-700 hover:bg-gray-200 duration-500 has-checked:bg-btn has-checked:hover:bg-btn has-checked:text-white has-checked:shadow has-checked:scale-105 has-checked:shadow-black/70 py-3 px-7 rounded-lg flex justify-center;
 }
 
 .nav-links {
@@ -99,24 +117,42 @@
 }
 
 .title {
-  @apply text-5xl lg:text-6xl;
+  @apply text-5xl lg:text-6xl font-semibold;
 }
 
 .header-section h2 {
-  @apply text-4xl lg:text-5xl;
+  @apply text-3xl lg:text-5xl font-semibold;
 }
 
 .header-section p,
 .subtitle {
-  @apply text-text-secondary dark:text-dark-text-secondary text-xl text-center;
+  @apply text-text-secondary dark:text-dark-text-secondary text-lg md:text-xl text-center;
+}
+
+main {
+  @apply mt-20
+}
+
+.hero-section, .page-hero {
+  @apply dark:bg-gradient-to-br dark:from-dark-primary dark:to-dark-secondary bg-primary flex justify-center;
 }
 
 .img-box {
   @apply w-full lg:w-120 m-auto h-100 lg:h-120 object-cover object-top rounded-3xl shadow-lg shadow-black/30 overflow-hidden;
 }
 
-.gallary-box {
+.gallary-box,
+.gallary-item,
+.gallery-item {
   @apply relative w-full m-auto h-80 rounded-3xl dark:shadow-lg dark:shadow-black/30 overflow-hidden flex justify-center items-center bg-gray-200;
+}
+
+.gallery-item figcaption {
+  @apply absolute bottom-7 right-4 text-2xl;
+}
+
+.gallery-zoom {
+  @apply text-2xl cursor-pointer bg-white/20 backdrop-blur-md flex justify-center items-center rounded-full p-4 transition;
 }
 
 .overlay {
@@ -129,7 +165,12 @@ section {
 }
 
 .service-card {
-  @apply bg-white dark:bg-dark-primary shadow-md rounded-2xl flex flex-col p-8 gap-4 hover:shadow-lg duration-500 hover:-translate-y-1;
+  @apply bg-white dark:bg-dark-primary shadow-md rounded-2xl flex flex-col p-8 gap-4 justify-between hover:shadow-lg duration-500 hover:-translate-y-1;
+}
+
+.contact-card  {
+  @apply bg-white dark:bg-dark-secondary  shadow-md rounded-2xl flex flex-col p-8  gap-2 justify-between hover:shadow-lg duration-500
+
 }
 
 .testimonial-box {
@@ -140,9 +181,17 @@ section {
   @apply bg-white dark:bg-dark-primary w-12 h-12 flex flex-col justify-center items-center shadow shadow-gray-200 dark:shadow-black rounded-full hover:scale-110 duration-500 cursor-pointer absolute;
 }
 
-.service-card div,
+.service-card>div:first-of-type,
 .contact-item .contact-icon {
   @apply bg-bg-icon dark:bg-dark-bg-icon group-hover:scale-110 duration-500 w-16 h-16 flex items-center justify-center rounded-2xl;
+}
+
+.contact-card > div:first-of-type{
+@apply bg-bg-icon dark:bg-dark-ternary  duration-500 w-16 h-16 flex items-center  justify-center rounded-2xl;
+}
+
+.service-card .features {
+  @apply list-disc list-inside space-y-1 marker:text-mark-text dark:marker:text-dark-mark-text;
 }
 
 .service-card i,
@@ -150,13 +199,22 @@ section {
   @apply group-hover:scale-110 duration-500 text-mark-text dark:text-dark-mark-text text-2xl;
 }
 
+.icon {
+  @apply bg-gradient-to-br from-btn-grad-primary to-btn-grad-secondry group-hover:scale-110 duration-500 w-16 h-16 flex items-center justify-center rounded-2xl;
+}
+
+.icon i {
+  @apply group-hover:scale-110 duration-500 text-white text-3xl;
+}
+
 .service-card h3,
-.contact-item h3 {
-  @apply text-lg;
+.contact-item h3,.contact-card h3 {
+  @apply text-xl font-semibold;
 }
 
 .service-card p,
-.contact-item p {
+.contact-item p,
+.contact-card p {
   @apply text-text-secondary dark:text-dark-text-secondary;
 }
 
@@ -173,11 +231,19 @@ section {
 }
 
 .input-box {
-  @apply flex flex-col gap-2
+  @apply flex flex-col gap-3
+}
+
+.input-box label {
+  @apply flex flex-wrap gap-2 items-center
 }
 
 .input-style {
-  @apply ring-1 ring-gray-300 dark:ring-gray-600 rounded-lg text-lg p-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-dark-secondary
+  @apply ring-1 ring-gray-300 dark:ring-gray-600/40 rounded-lg text-lg p-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-dark-secondary
+}
+
+.form-required {
+  @apply text-red-500
 }
 
 .faq-accordion details {
@@ -190,4 +256,22 @@ section {
 
 .faq-accordion p {
   @apply pb-6 px-6 text-base text-text-secondary dark:text-dark-text-secondary;
+}
+
+.final-cta {
+  @apply !py-20;
+}
+
+.bg-grad {
+  @apply bg-gradient-to-b from-grad-primary dark:from-dark-grad-primary to-grad-secondry dark:to-dark-grad-secondry;
+}
+
+
+.tabs-btns,
+.gallery-tabs {
+  @apply flex flex-wrap justify-center gap-4;
+}
+
+.icon-color {
+  @apply text-icon dark:text-dark-icon;
 }

@@ -48,7 +48,7 @@
                 <a class="nav-links" href="../public/services.html">الخدمات</a>
                 <a class="nav-links" href="../public/about.html">عن الدكتور</a>
                 <a class="nav-links" href="../public/gallery.html">المعرض</a>
-                <a class="nav-links" href="../public/stories.html">قصص النجاح</a>
+                <a class="nav-links" href="../public/stories.html" aria-current="page">قصص النجاح</a>
                 <a class="nav-links" href="../public/booking.html">احجز الان</a>
             </nav>
 
@@ -78,15 +78,89 @@
     <nav id="mobileNav" class=" hidden  fixed top-20 left-0 w-full bg-header dark:bg-dark-header
           py-3 shadow-md z-60 lg:hidden ">
         <div class="container flex flex-col gap-2 pt-3 border-t-1 ">
-            <a href="../index.html" class="mobile-nav-link" >الرئيسية</a>
-            <a href="../public/services.html" class="mobile-nav-link" >الخدمات</a>
+            <a href="../index.html" class="mobile-nav-link">الرئيسية</a>
+            <a href="../public/services.html" class="mobile-nav-link">الخدمات</a>
             <a href="../public/about.html" class="mobile-nav-link">عن الدكتور</a>
             <a href="../public/gallery.html" class="mobile-nav-link">المعرض</a>
-            <a href="../public/stories.html" class="mobile-nav-link">قصص النجاح</a>
+            <a href="../public/stories.html" class="mobile-nav-link" aria-current="mobile-page">قصص النجاح</a>
             <a href="../public/booking.html" class="mobile-nav-link">احجز الان</a>
 
         </div>
     </nav>
+    <!-- ====================== Main Content ====================== -->
+    <main>
+
+        <!-- Thank You Hero (matches site style) -->
+        <section class="hero-section lg:h-[calc(100vh-80px)] flex items-center" aria-labelledby="thankyou-title">
+            <div class="container grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="lg:px-8">
+                    <div
+                        class="inline-flex items-center gap-4 bg-green-100 text-green-800 rounded-full px-4 py-2 mb-6 w-max">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="font-semibold">تم الاستلام</span>
+                    </div>
+
+                    <h1 id="thankyou-title" class="title leading-tight">تم إرسال طلب الحجز بنجاح!</h1>
+                    <p class="subtitle mt-4">شكراً لثقتك، فريقنا سيعاود التواصل خلال ساعة لتأكيد الموعد النهائي.</p>
+
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="../index.html" class="booking-btn px-8 py-3">العودة للصفحة الرئيسية</a>
+                        <a href="../public/stories.html" class="more-btn">شوفي قصص النجاح</a>
+                    </div>
+
+                    <div class="mt-8 max-w-md bg-white dark:bg-dark-primary rounded-2xl p-6 shadow-lg">
+                        <h3 class="font-semibold text-lg mb-3">ملخص طلب الحجز</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-text-secondary">
+                            <div><span class="font-medium">الاسم:</span> <span id="summary-name">أمل محمد أحمد</span>
+                            </div>
+                            <div><span class="font-medium">الجوال:</span> <span id="summary-phone">010xxxxxxx</span>
+                            </div>
+                            <div><span class="font-medium">الخدمة:</span> <span id="summary-service">حقن مجهري</span>
+                            </div>
+                            <div><span class="font-medium">التاريخ:</span> <span id="summary-date">15 ديسمبر 2025</span>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm text-text-secondary">تم إرسال تأكيد الحجز على رقم الجوال والبريد
+                            الإلكتروني عند التفعيل.</p>
+                    </div>
+                </div>
+
+                <div class="lg:pr-8">
+                    <div class="bg-ternary dark:bg-dark-secondary p-6 rounded-2xl text-white shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4">بينما ننتظر تأكيد موعدك</h3>
+                        <p class="mb-4">إليكِ بعض النصائح والملفات المفيدة للاستعداد للزيارة.</p>
+                        <ul class="list-disc pl-5 space-y-2 text-white/90">
+                            <li>تحليل هرمون AMH وسونار تتبع إباضة</li>
+                            <li>تناول الفيتامينات والابتعاد عن التوتر</li>
+                            <li>الإقلاع عن التدخين واتباع تعليمات الطبيب</li>
+                        </ul>
+                        <div class="mt-6 flex gap-3">
+                            <a href="#" class="btn-primary">تحميل قائمة التحاليل</a>
+                            <a href="https://wa.me/20123456789" class="more-btn">تواصل عبر واتساب</a>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 bg-white dark:bg-dark-primary rounded-2xl p-6 shadow-md">
+                        <h4 class="font-semibold mb-3">أرقامنا</h4>
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <div>
+                                <p class="text-2xl font-bold">5000+</p>
+                                <p class="text-text-secondary">مريضة سعيدة</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold">98%</p>
+                                <p class="text-text-secondary">نسبة رضا</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 
 

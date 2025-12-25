@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark" class="scroll-smooth duration-500" locale="ar-EG" loading="lazy">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> دكتور تؤأم - الخدمات الطبية</title>
+
+    <!-- fontawesome  cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- style cdn  -->
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <!-- aos cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+    <!-- favicons  -->
+    <link rel="icon" type="image/png" href="../Favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../Favicons/favicon.svg" />
+    <link rel="shortcut icon" href="../Favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../Favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Toams" />
+    <link rel="manifest" href="../Favicons/site.webmanifest" />
+
+    <!-- meta desc -->
+    <meta name="description"
+        content="د. محمود رأفت - استشاري نساء وتوليد وتأخر إنجاب وأطفال الأنابيب وحقن مجهري في اسيوط  مصر">
+</head>
+
+
+<body class="text-text-primary dark:text-dark-text-primary  dark:bg-dark-primary">
+
+    <!-- ====================== Header ====================== -->
+    <header class="site-header  bg-header dark:bg-dark-header  h-20  shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container flex flex-row items-center  justify-between w-full h-full ">
+            <!-- logo -->
+            <div class="logo-container">
+                <a href="../index.html" title="الصفحة الرئيسية" class="logo" aria-label="دكتور تؤأم - الصفحة الرئيسية">
+                    <img src="../Favicons/favicon.svg" alt=" شعار دكتور تؤام" class="w-20  h-auto ">
+                </a>
+            </div>
+            <!-- navbar -->
+            <nav class="lg:flex flex-row  gap-10  hidden dark:text-dark-nav   ">
+                <a class="nav-links" href="../index.html">الرئيسية</a>
+                <a class="nav-links" href="../public/services.html">الخدمات</a>
+                <a class="nav-links" href="../public/about.html">عن الدكتور</a>
+                <a class="nav-links" href="../public/gallery.html">المعرض</a>
+                <a class="nav-links" href="../public/stories.html">قصص النجاح</a>
+                <a class="nav-links" href="../public/booking.html" aria-current="page">احجز الان</a>
+            </nav>
+
+            <!-- actions -->
+            <div class="flex flex-row items-center">
+
+                <!-- mode btn -->
+                <button id="modeBtn" title="وضع الصبح"
+                    class="text-xl p-1.5 m-4 rounded-lg hover:bg-gray-300  cursor-pointer dark:hover:bg-gray-900">
+                    <i class="far fas fa-soon  dark:text-sun"></i>
+                </button>
+
+                <!-- toggle btn -->
+                <button id="toggle-btn" title="اظهار القائمة"
+                    class="text-2xl p-1.5  rounded-lg hover:bg-gray-300  cursor-pointer dark:hover:bg-gray-900 lg:hidden">
+                    <i class="fa-solid fa-bars fa-xmark "></i>
+                </button>
+
+                <!-- booking btn -->
+                <a href="../public/booking.html" class="booking-btn  px-7 py-2   hidden lg:block   ">احجز موعدك</a>
+
+            </div>
+
+        </div>
+    </header>
+    <!-- nav of mobile -->
+    <nav id="mobileNav" class=" hidden  fixed top-20 left-0 w-full bg-header dark:bg-dark-header
+          py-3 shadow-md z-60 lg:hidden ">
+        <div class="container flex flex-col gap-2 pt-3 border-t-1 ">
+            <a href="../index.html" class="mobile-nav-link">الرئيسية</a>
+            <a href="../public/services.html" class="mobile-nav-link">الخدمات</a>
+            <a href="../public/about.html" class="mobile-nav-link">عن الدكتور</a>
+            <a href="../public/gallery.html" class="mobile-nav-link">المعرض</a>
+            <a href="../public/stories.html" class="mobile-nav-link">قصص النجاح</a>
+            <a href="../public/booking.html" class="mobile-nav-link" aria-current="mobile-page">احجز الان</a>
+
+        </div>
+    </nav>
+    <!-- ====================== End of Header ====================== -->
+    <main>
+
+        <!-- ====================== Page Hero ====================== -->
+        <section class="booking-hero hero-section" aria-labelledby="booking-hero-title">
+            <div class="container header-section">
+                <h1 id="booking-hero-title" class="title text-center">احجز موعدك الآن</h1>
+                <p class="subtitle">
+                    املأ النموذج أدناه وسيتواصل معكِ فريقنا خلال أقل من ساعة لتأكيد الموعد
+                </p>
+            </div>
+        </section>
+
+        <!-- ====================== Booking Form ====================== -->
+        <section class="booking-section" id="booking-section">
+            <div class="container max-w-4xl  flex flex-col gap-14">
+                <div
+                    class="booking-form-wrapper bg-thernary dark:bg-dark-secondary py-14 px-4 md:p-14 rounded-2xl shadow-lg shadow-black/20">
+
+                    <form class="booking-form-large" id="bookingForm" action="#" method="POST">
+                        <div class="form-grid grid grid-cols-1 md:grid-cols-2  gap-7 mb-7">
+                            <div class="input-box">
+                                <label for="full-name"> <i class="far fa-user icon-color"></i> الاسم الكامل <span
+                                        class="form-required">*</span></label>
+                                <input type="text" class="input-style dark:!bg-dark-primary" placeholder="ادخل اسمك"
+                                    id="full-name" name="full-name" required>
+                            </div>
+                            <div class="input-box">
+                                <label for="phone"><i class="fas fa-phone-alt icon-color"></i> رقم الجوال <span
+                                        class="form-required">*</span></label>
+                                <input type="tel" class="input-style  dark:!bg-dark-primary"
+                                    placeholder="+20 123 4567 891" id="phone" name="phone" required>
+                            </div>
+                            <div class="input-box md:col-span-2">
+                                <label for="email"><i class="fas fa-envelope icon-color"></i> البريد الإلكتروني </label>
+                                <input type="email" name="email" class="input-style dark:!bg-dark-primary"
+                                    placeholder="example@email.com">
+                            </div>
+
+                            <div class="input-box md:col-span-2">
+                                <label for="service-type"><i class="fas fa-stethoscope icon-color"></i> نوع الخدمة <span
+                                        class="form-required">*</span></label>
+                                <select title=" اختر الخدمة" class="input-style dark:!bg-dark-primary" name="service"
+                                    required>
+                                    <option hidden>اختر الخدمة</option>
+                                    <option>كشف نساء وتوليد</option>
+                                    <option>حقن مجهري</option>
+                                    <option>متابعة حمل</option>
+                                </select>
+                            </div>
+
+                            <div class="input-box md:col-span-2">
+                                <label> <i class="far fa-calendar icon-color"></i> التاريخ المفضل <span
+                                        class="form-required">*</span></label>
+                                <input type="date" title="اختار تاريخ الحجز" name="date"
+                                    class="input-style dark:!bg-dark-primary " required>
+                            </div>
+
+                            <div class="input-box md:col-span-2 full-width">
+                                <label><i class="far fa-clock icon-color"></i> الوقت المناسب <span
+                                        class="form-required">*</span></label>
+                                <div class="time-slots grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+                                    <label class="time-btn"><input type="radio" required class="hidden peer" name="time"
+                                            value="06:00 م"> 06:00 م</label>
+                                    <label class="time-btn"><input type="radio" required class="hidden peer" name="time"
+                                            value="06:30 م"> 06:30 م</label>
+                                    <label class="time-btn"><input type="radio" required class="hidden peer" name="time"
+                                            value="07:00 م"> 07:00 م</label>
+                                    <label class="time-btn"><input type="radio" required class="hidden peer" name="time"
+                                            value="07:30 م"> 07:30 م</label>
+                                    <label class="time-btn"><input type="radio" required class="hidden peer" name="time"
+                                            value="08:00 م"> 08:00 م</label>
+                                    <label class="time-btn"><input type="radio" required class="hidden peer" name="time"
+                                            value="08:30 م"> 08:30 م</label>
+                                    <label class="time-btn"><input type="radio" required class="hidden peer" name="time"
+                                            value="09:00 م"> 09:00 م</label>
+                                    <label class="time-btn"><input type="radio" required class="hidden peer" name="time"
+                                            value="09:30 م"> 09:30 م</label>
+                                    <label class="time-btn"><input type="radio" required class="hidden peer" name="time"
+                                            value="10:00 م"> 10:00 م</label>
+                                </div>
+                            </div>
+
+                            <div class="input-box md:col-span-2 full-width">
+                                <label> <i class="far fa-comment-alt icon-color"></i> ملاحظات إضافية (اختياري)</label>
+                                <textarea name="notes" rows="5" class="input-style dark:!bg-dark-primary "
+                                    placeholder="هل لديكِ أي استفسارات أو تفاصيل طبية ترغبين في إخبارنا بها؟"></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-primary large submit-btn !text-white mb-4 font-semibold">
+                            تأكيد الحجز وإرسال الطلب
+                        </button>
+
+                        <p class="form-note text-center">بإرسال هذا النموذج، أنت توافق على <a
+                                href="../public/privacy.html"
+                                class="text-icon dark:text-dark-icon hover:opacity-70">سياسة الخصوصية</a>
+                        </p>
+                    </form>
+
+
+                </div>
+                <!-- طرق تواصل سريعة تحت النموذج -->
+                <div class="quick-contact  grid grid-cols-1 md:grid-cols-3  gap-7">
+
+                    <a href="tel:+01141685814" class="contact-card items-center group">
+                        <div class=" icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3 class="text-lg">اتصلي الآن</h3>
+                        <p dir="ltr" class="text-center  ">+20 123 456 789</p>
+                    </a>
+                    <a href="https://wa.me/01141685814" class="contact-card items-center group">
+                        <div class=" icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3 class="text-lg">واتساب</h3>
+                        <p class="text-center  ">تواصلي فورا</p>
+                    </a>
+
+                    <a href="#booking-section" class="contact-card items-center group">
+                        <div class=" icon">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <h3 class="text-lg">مواعيد العمل</h3>
+                        <p class="text-center  ">السبت - الأربعاء<br>6:00 م - 10:00 م</p>
+                    </a>
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ====================== Footer ====================== -->
+
+    <footer class="site-footer bg-text-primary dark:bg-black text-white py-10 px-5">
+        <div class="container">
+            <div class="footer-grid grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div class="footer-col sm:col-span-3 lg:col-span-1">
+                    <img src="../Favicons/favicon.svg" alt="شعار عيادة د.محمود رافت" class="w-24 h-auto mb-4">
+                    <p class="text-text-secondary dark:text-dark-text-secondary">نقدم أفضل خدمات النساء والتوليد والحقن
+                        المجهري في اسيوط بأحدث التقنيات العالمية .</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="font-semibold text-xl">روابط سريعة</h4>
+                    <nav class="flex flex-col gap-2 pt-4 text-text-secondary dark:text-dark-text-secondary  ">
+                        <a class="hover:text-white duration-300 " href="../index.html">الرئيسية</a>
+                        <a class="hover:text-white duration-300 " href="../public/services.html">الخدمات</a>
+                        <a class="hover:text-white duration-300 " href="../public/about.html">عن الدكتور</a>
+                        <a class="hover:text-white duration-300 " href="../public/stories.html">قصص النجاح</a>
+                    </nav>
+                </div>
+                <div class="footer-col">
+                    <h4 class="font-semibold text-xl">خدماتنا</h4>
+                    <ul class="flex flex-col gap-2 pt-4 text-text-secondary dark:text-dark-text-secondary  ">
+                        <li>الكشف والاستشارة</li>
+                        <li>العمليات الجراحية</li>
+                        <li>الفحوصات الطبية</li>
+                        <li>المتابعة الدورية</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="font-semibold text-xl">تواصل معنا</h4>
+                    <div class="flex items-center gap-2 my-2  text-text-secondary dark:text-dark-text-secondary  ">
+                        <i class="fas fas fa-phone-alt"></i>
+                        <p dir="ltr" class="">+20 123 456 789</p>
+                    </div>
+                    <div class="flex items-center gap-2 my-2  text-text-secondary dark:text-dark-text-secondary  ">
+                        <i class="far fa-envelope"></i>
+                        <p dir="ltr" class="">info@dtwaam.com</p>
+                    </div>
+                    <div class="flex items-center gap-2 my-2  text-text-secondary dark:text-dark-text-secondary  ">
+                        <i class=" fas fa-map-marker-alt"></i>
+                        <p dir="ltr" class="">اسيوط - ديروط</p>
+                    </div>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="copyright border-t-1 text-center pt-4 text-text-secondary dark:text-dark-text-secondary  ">
+                <p>© 2025 عيادة د. توأم الطبيب - جميع الحقوق محفوظة</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- aos js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+        // theme toggle
+        const html = document.documentElement;
+        const toggleBtn = document.getElementById('modeBtn');
+
+        // init theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            html.dataset.theme = savedTheme;
+        } else {
+            html.dataset.theme = window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light';
+        }
+
+        // update icon based on theme
+        function updateIcon(theme) {
+            const icon = toggleBtn.querySelector('i');
+            if (theme === 'dark') {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                toggleBtn.title = 'وضع الصبح';
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                toggleBtn.title = 'وضع الليل';
+            }
+        }
+        updateIcon(html.dataset.theme);
+
+        // toggle theme on button click
+        toggleBtn.addEventListener('click', () => {
+            const newTheme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+            html.dataset.theme = newTheme;
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        // mobile nav toggle
+        const mobileNav = document.getElementById('mobileNav');
+        const toggleNavBtn = document.getElementById('toggle-btn');
+        toggleNavBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('hidden');
+            toggleNavBtn.querySelector('i').classList.toggle('fa-bars');
+        });
+    </script>
+
+</body>
+
+</html>

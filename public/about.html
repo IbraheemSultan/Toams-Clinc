@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark" class="scroll-smooth duration-500" locale="ar-EG" loading="lazy">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> دكتور تؤأم - الخدمات الطبية</title>
+
+    <!-- fontawesome  cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- style cdn  -->
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <!-- aos cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+    <!-- favicons  -->
+    <link rel="icon" type="image/png" href="../Favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../Favicons/favicon.svg" />
+    <link rel="shortcut icon" href="../Favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../Favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Toams" />
+    <link rel="manifest" href="../Favicons/site.webmanifest" />
+
+    <!-- meta desc -->
+    <meta name="description"
+        content="د. محمود رأفت - استشاري نساء وتوليد وتأخر إنجاب وأطفال الأنابيب وحقن مجهري في اسيوط  مصر">
+</head>
+
+
+<body class="text-text-primary dark:text-dark-text-primary  dark:bg-dark-primary">
+
+    <!-- ====================== Header ====================== -->
+    <header class="site-header  bg-header dark:bg-dark-header  h-20  shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container flex flex-row items-center  justify-between w-full h-full ">
+            <!-- logo -->
+            <div class="logo-container">
+                <a href="../index.html" title="الصفحة الرئيسية" class="logo" aria-label="دكتور تؤأم - الصفحة الرئيسية">
+                    <img src="../Favicons/favicon.svg" alt=" شعار دكتور تؤام" class="w-20  h-auto ">
+                </a>
+            </div>
+            <!-- navbar -->
+            <nav class="lg:flex flex-row  gap-10  hidden dark:text-dark-nav   ">
+                <a class="nav-links" href="../index.html">الرئيسية</a>
+                <a class="nav-links" href="../public/services.html">الخدمات</a>
+                <a class="nav-links" href="../public/about.html" aria-current="page">عن الدكتور</a>
+                <a class="nav-links" href="../public/gallery.html">المعرض</a>
+                <a class="nav-links" href="../public/stories.html">قصص النجاح</a>
+                <a class="nav-links" href="../public/booking.html">احجز الان</a>
+            </nav>
+
+            <!-- actions -->
+            <div class="flex flex-row items-center">
+
+                <!-- mode btn -->
+                <button id="modeBtn" title="وضع الصبح"
+                    class="text-xl p-1.5 m-4 rounded-lg hover:bg-gray-300  cursor-pointer dark:hover:bg-gray-900">
+                    <i class="far fas fa-soon  dark:text-sun"></i>
+                </button>
+
+                <!-- toggle btn -->
+                <button id="toggle-btn" title="اظهار القائمة"
+                    class="text-2xl p-1.5  rounded-lg hover:bg-gray-300  cursor-pointer dark:hover:bg-gray-900 lg:hidden">
+                    <i class="fa-solid fa-bars fa-xmark "></i>
+                </button>
+
+                <!-- booking btn -->
+                <a href="../public/booking.html" class="booking-btn  px-7 py-2   hidden lg:block   ">احجز موعدك</a>
+
+            </div>
+
+        </div>
+    </header>
+    <!-- nav of mobile -->
+    <nav id="mobileNav" class=" hidden  fixed top-20 left-0 w-full bg-header dark:bg-dark-header
+          py-3 shadow-md z-60 lg:hidden ">
+        <div class="container flex flex-col gap-2 pt-3 border-t-1 ">
+            <a href="../index.html" class="mobile-nav-link">الرئيسية</a>
+            <a href="../public/services.html" class="mobile-nav-link">الخدمات</a>
+            <a href="../public/about.html" class="mobile-nav-link" aria-current="mobile-page">عن الدكتور</a>
+            <a href="../public/gallery.html" class="mobile-nav-link">المعرض</a>
+            <a href="../public/stories.html" class="mobile-nav-link">قصص النجاح</a>
+            <a href="../public/booking.html" class="mobile-nav-link">احجز الان</a>
+
+        </div>
+    </nav>
+    <!-- ====================== Main Content ====================== -->
+    <main>
+
+        <!-- ====================== Hero About ====================== -->
+        <section class="hero-section lg:h-[calc(100vh-80px)] " aria-labelledby="about-title">
+            <div class="container grid grid-cols-1 lg:grid-cols-2 gap-10 justify-center items-center">
+                <div class="about-grid lg:px-10 h-full">
+                    <article class="hero-content flex flex-col  h-full  gap-4 justify-center  items-start   ">
+                        <h1 id="about-title" class="title   leading-tight">د. محمود رافت</h1>
+                        <p class="  text-mark-text  dark:text-dark-mark-text text-xl ">
+                            استشاري نساء وتوليد وتأخر الإنجاب وأطفال الأنابيب والحقن المجهري
+                        </p>
+                        <p class="subtitle !text-right mt-4">
+                            طبيب متخصص بخبرة تزيد عن 15 عامًا في مجال النساء والتوليد وعلاج تأخر الإنجاب،
+                            حصل على أعلى الشهادات العلمية من مصر وأوروبا، ونجح في تحقيق حلم الأمومة لأكثر من 5000 أسرة
+                            مصرية.
+                        </p>
+                        <div class="hero-links flex flex-row flex-wrap gap-4 mt-6 ">
+                            <a href="../public/booking.html"
+                                class="booking-btn px-10 py-3  duration-500 hover:scale-105">احجز موعد الآن</a>
+                            <a href="../public/services.html" class="more-btn">تصفح
+                                خدماتنا</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="about-image  h-full flex justify-center items-center ">
+                    <figure class="hero-image flex justify-center items-center relative ">
+                        <div class="img-box ">
+                            <img src="../img/Doctor.jpeg" loading="lazy" decoding="async" alt="دكتور محمود رافت"
+                                class="w-full h-auto ">
+                        </div>
+                        <div
+                            class=" flex flex-row items-end pb-2 w-full lg:w-120 rounded-b-3xl  absolute bottom-0 bg-gradient-to-t from-black/70 to-transparent ">
+                            <img src="../Favicons/logoWithTitle.png" alt="" class="w-18 h-18 bg-cover ">
+                            <div class="text-white flex flex-col gap-2 font-semibold mb-3">
+                                <h1>د. محمود رافت</h1>
+                                <p>استشاري متخصص</p>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================== Tabs Navigation ====================== -->
+        <section class="about-tabs-nav border-b-1 border-gray-400 dark:border-gray-800 ">
+            <div class="container flex justify-center items-center ">
+                <div class="tabs-btns " role="tablist">
+                    <button role="tab" class="tab-btn" aria-selected="true" aria-controls="tab-profile">السيرة
+                        الذاتية</button>
+                    <button role="tab" class="tab-btn" aria-selected="false"
+                        aria-controls="tab-certificates">الشهادات</button>
+                    <button role="tab" class="tab-btn" aria-selected="false"
+                        aria-controls="tab-experience">الخبرة</button>
+                    <button role="tab" class="tab-btn" aria-selected="false" aria-controls="tab-timeline">المسار
+                        المهني</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================== Tab Content: السيرة الذاتية ====================== -->
+        <section id="tab-profile" role="tabpanel" class="tab-content active">
+            <div class="container">
+                <h2 class="section-title">السيرة الذاتية</h2>
+                <p class="section-subtitle">رحلة طبية مليئة بالإنجازات والنجاحات في خدمة الأسر المصرية</p>
+
+                <div class="profile-grid">
+                    <div class="profile-text">
+                        <p>
+                            د. توأم الطبيب هو أحد أبرز أطباء النساء والتوليد في مصر، متخصص في علاج تأخر الإنجاب والحقن
+                            المجهري وأطفال الأنابيب،
+                            يمتلك خبرة عملية واسعة في أكبر المستشفيات المصرية والمراكز الأوروبية المتخصصة.
+                        </p>
+                        <p>
+                            يتميز بالدقة في التشخيص والمتابعة الشخصية لكل حالة، مع استخدام أحدث التقنيات العالمية في
+                            معمل الأجنة والمناظير النسائية.
+                        </p>
+                        <ul class="highlights">
+                            <li>عضو الجمعية المصرية للخصوبة والعقم</li>
+                            <li>عضو الجمعية الأوروبية للإخصاب البشري ESHRE</li>
+                            <li>حاصل على زمالة ألمانية في الحقن المجهري</li>
+                            <li>دبلوم المناظير النسائية من فرنسا</li>
+                        </ul>
+                    </div>
+                    <div class="profile-gallery">
+                        <img src="cert1.jpg" alt="شهادة دكتوراه نساء وتوليد">
+                        <img src="cert2.jpg" alt="زمالة الحقن المجهري - ألمانيا">
+                        <img src="cert3.jpg" alt="عضوية ESHRE">
+                        <img src="doctor-with-patient.jpg" alt="د. توأم مع مريضة">
+                    </div>
+                </div>
+            </div>
+            </ personalized>
+        </section>
+
+        <!-- ====================== Tab Content: الشهادات ====================== -->
+        <section id="tab-certificates" role="tabpanel" class="tab-content">
+            <div class="container">
+                <h2 class="section-title">الشهادات والمؤهلات العلمية</h2>
+                <div class="certificates-grid">
+                    <article class="cert-card">
+                        <h3>دكتوراه وماجستير نساء وتوليد</h3>
+                        <p>جامعة عين شمس - القاهرة</p>
+                    </article>
+                    <article class="cert-card">
+                        <h3>زمالة الحقن المجهري والإخصاب</h3>
+                        <p>معهد الإخصاب - ميونخ، ألمانيا</p>
+                    </article>
+                    <article class="cert-card">
+                        <h3>دبلوم المناظير النسائية المتقدمة</h3>
+                        <p>معهد لاباروسكوبي - باريس، فرنسا</p>
+                    </article>
+                    <article class="cert-card">
+                        <h3>عضوية الجمعية الأوروبية للخصوبة</h3>
+                        <p>ESHRE - عضو نشط منذ 2018</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================== Tab Content: الخبرة ====================== -->
+        <section id="tab-experience" role="tabpanel" class="tab-content">
+            <div class="container">
+                <h2 class="section-title">الخبرة العملية</h2>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <time>2023 - حتى الآن</time>
+                        <h3>استشاري نساء وتوليد وحقن مجهري</h3>
+                        <p>عيادات د. توأم الطبيب - مدينة نصر، القاهرة</p>
+                    </article>
+                    <article class="timeline-item">
+                        <time>2019 - 2023</time>
+                        <h3>استشاري أول - قسم الخصوبة</h3>
+                        <p>مستشفى الدمرداش الجامعي</p>
+                    </article>
+                    <article class="timeline-item">
+                        <time>2015 - 2019</time>
+                        <h3>تخصص الحقن المجهري والمناظير</h3>
+                        <p>معهد الإخصاب - ألمانيا وفرنسا</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- service section -->
+        <section aria-labelledby="services-title" class="bg-ternary dark:bg-dark-secondary">
+            <div class="container">
+                <div class="header-section  ">
+                    <h2 id="services-title">قيمنا ومبادئنا </h2>
+                    <p>نؤمن بمجمعة من القيم والمبادئ التي تضمن تقديم أفضل رعاية صحية ممكنة</p>
+                </div>
+
+                <div class="services-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-15 gap-7">
+                    <article class="service-card items-center group">
+                        <div class="">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <h3 class="text-lg">العناية بالمريض</h3>
+                        <p class="text-center">نضع راحة وصحة المريض في المقام الأول</p>
+
+                    </article>
+                    <article class="service-card items-center group">
+                        <div class="">
+                            <i class="fas fa-award "></i>
+                        </div>
+                        <h3>التميز الطبي</h3>
+                        <p class="text-center">نسعى دائماً لتقديم أفضل مستوى من الرعاية الطبية</p>
+                    </article>
+                    <article class="service-card items-center group">
+                        <div class="">
+                            <i class="far fa-heart "></i>
+                        </div>
+                        <h3>الفحوصات الطبية</h3>
+                        <p class="text-center">تحاليل هرمونات، سونار 4D، فحوصات شاملة للخصوبة</p>
+                    </article>
+                    <article class="service-card items-center group">
+                        <div class="">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+                        <h3>التطوير المستمر</h3>
+                        <p class="text-center">نواكب أحدث التطورات في المجال الطبي</p>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ====================== Final CTA ====================== -->
+        <section class="final-cta  ">
+            <div class="container header-section  bg-grad py-15 rounded-2xl">
+                <h2 class="!text-white ">ابدئي رحلة الرعاية الصحية معنا</h2>
+                <p class="!text-dark-text-secondary  ">نحن هنا لخدمتك وتقديم أفضل رعاية صحية ممكنة لك ولطفلك. احجزي
+                    موعدك
+                    الآن</p>
+                <a href="../public/booking.html" class="booking-btn cta-btn ">احجزي موعدك الآن</a>
+            </div>
+        </section>
+
+    </main>
+    <!-- ====================== Footer ====================== -->
+
+    <footer class="site-footer bg-text-primary dark:bg-black text-white py-10 px-5">
+        <div class="container">
+            <div class="footer-grid grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div class="footer-col sm:col-span-3 lg:col-span-1">
+                    <img src="../Favicons/favicon.svg" alt="شعار عيادة د.محمود رافت" class="w-24 h-auto mb-4">
+                    <p class="text-text-secondary dark:text-dark-text-secondary">نقدم أفضل خدمات النساء والتوليد والحقن
+                        المجهري في اسيوط بأحدث التقنيات العالمية .</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="font-semibold text-xl">روابط سريعة</h4>
+                    <nav class="flex flex-col gap-2 pt-4 text-text-secondary dark:text-dark-text-secondary  ">
+                        <a class="hover:text-white duration-300 " href="../index.html">الرئيسية</a>
+                        <a class="hover:text-white duration-300 " href="../public/services.html">الخدمات</a>
+                        <a class="hover:text-white duration-300 " href="../public/about.html">عن الدكتور</a>
+                        <a class="hover:text-white duration-300 " href="../public/stories.html">قصص النجاح</a>
+                    </nav>
+                </div>
+                <div class="footer-col">
+                    <h4 class="font-semibold text-xl">خدماتنا</h4>
+                    <ul class="flex flex-col gap-2 pt-4 text-text-secondary dark:text-dark-text-secondary  ">
+                        <li>الكشف والاستشارة</li>
+                        <li>العمليات الجراحية</li>
+                        <li>الفحوصات الطبية</li>
+                        <li>المتابعة الدورية</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="font-semibold text-xl">تواصل معنا</h4>
+                    <div class="flex items-center gap-2 my-2  text-text-secondary dark:text-dark-text-secondary  ">
+                        <i class="fas fas fa-phone-alt"></i>
+                        <p dir="ltr" class="">+20 123 456 789</p>
+                    </div>
+                    <div class="flex items-center gap-2 my-2  text-text-secondary dark:text-dark-text-secondary  ">
+                        <i class="far fa-envelope"></i>
+                        <p dir="ltr" class="">info@dtwaam.com</p>
+                    </div>
+                    <div class="flex items-center gap-2 my-2  text-text-secondary dark:text-dark-text-secondary  ">
+                        <i class=" fas fa-map-marker-alt"></i>
+                        <p dir="ltr" class="">اسيوط - ديروط</p>
+                    </div>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="copyright border-t-1 text-center pt-4 text-text-secondary dark:text-dark-text-secondary  ">
+                <p>© 2025 عيادة د. توأم الطبيب - جميع الحقوق محفوظة</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- aos js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+        // theme toggle
+        const html = document.documentElement;
+        const toggleBtn = document.getElementById('modeBtn');
+
+        // init theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            html.dataset.theme = savedTheme;
+        } else {
+            html.dataset.theme = window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light';
+        }
+
+        // update icon based on theme
+        function updateIcon(theme) {
+            const icon = toggleBtn.querySelector('i');
+            if (theme === 'dark') {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                toggleBtn.title = 'وضع الصبح';
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                toggleBtn.title = 'وضع الليل';
+            }
+        }
+        updateIcon(html.dataset.theme);
+
+        // toggle theme on button click
+        toggleBtn.addEventListener('click', () => {
+            const newTheme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+            html.dataset.theme = newTheme;
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        // mobile nav toggle
+        const mobileNav = document.getElementById('mobileNav');
+        const toggleNavBtn = document.getElementById('toggle-btn');
+        toggleNavBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('hidden');
+            toggleNavBtn.querySelector('i').classList.toggle('fa-bars');
+        });
+    </script>
+
+</body>
+
+</html>
