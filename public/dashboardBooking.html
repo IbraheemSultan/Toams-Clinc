@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark" class="scroll-smooth duration-500" locale="ar-EG" loading="lazy">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> دكتور تؤأم - الخدمات الطبية</title>
+
+    <!-- fontawesome  cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- style cdn  -->
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <!-- aos cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+    <!-- favicons  -->
+    <link rel="icon" type="image/png" href="../Favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../Favicons/favicon.svg" />
+    <link rel="shortcut icon" href="../Favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../Favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Toams" />
+    <link rel="manifest" href="../Favicons/site.webmanifest" />
+
+    <!-- meta desc -->
+    <meta name="description"
+        content="د. محمود رأفت - استشاري نساء وتوليد وتأخر إنجاب وأطفال الأنابيب وحقن مجهري في اسيوط  مصر">
+</head>
+
+<body>
+
+    <!-- Top navigation bar -->
+    <header class="top-nav">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="شعار العيادة">
+                <span>عيادة دكتور توأم</span>
+            </a>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">الحجوزات</a></li>
+                    <li><a href="#">المرضى</a></li>
+                    <li><a href="#">التقارير</a></li>
+                    <li><a href="#">الإعدادات</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <img src="user-avatar.png" alt="صورة المستخدم">
+                <span>مرحبا، د. توأم</span>
+                <button class="notification-btn">
+                    <span class="icon bell"></span>
+                    <span class="count">3</span>
+                </button>
+                <button class="settings-btn">
+                    <span class="icon gear"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dashboard hero banner -->
+    <section class="dashboard-hero">
+        <div class="container">
+            <h1>مرحبا بك في لوحة التحكم</h1>
+            <p>إدارة حجوزاتك، المرضى، والإحصائيات بكل سهولة</p>
+            <button class="add-new-btn">حجز جديد</button>
+        </div>
+    </section>
+
+    <!-- Stats overview cards -->
+    <section class="stats-overview">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card total-appointments">
+                    <span class="icon calendar"></span>
+                    <h2>إجمالي الحجوزات اليوم</h2>
+                    <strong>245</strong>
+                </div>
+                <div class="stat-card confirmed">
+                    <span class="icon check"></span>
+                    <h2>الحجوزات المؤكدة</h2>
+                    <strong>8</strong>
+                </div>
+                <div class="stat-card pending">
+                    <span class="icon clock"></span>
+                    <h2>في الانتظار</h2>
+                    <strong>12</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main dashboard content -->
+    <section class="dashboard-content">
+        <div class="container">
+            <!-- Left sidebar: Appointments list -->
+            <aside class="appointments-list">
+                <h2>حجوزات اليوم</h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="بحث عن مريض...">
+                    <span class="icon search"></span>
+                </div>
+                <ul class="appointments">
+                    <li class="appointment-item">
+                        <span class="status completed"></span>
+                        <span class="patient-name">أمل محمد</span>
+                        <span class="time">10:00 ص</span>
+                        <span class="service">كشف نساء</span>
+                    </li>
+                    <li class="appointment-item">
+                        <span class="status in-progress"></span>
+                        <span class="patient-name">سارة أحمد</span>
+                        <span class="time">11:30 ص</span>
+                        <span class="service">متابعة حمل</span>
+                    </li>
+                    <li class="appointment-item">
+                        <span class="status pending"></span>
+                        <span class="patient-name">فاطمة حسن</span>
+                        <span class="time">02:00 م</span>
+                        <span class="service">حقن مجهري</span>
+                    </li>
+                    <li class="appointment-item">
+                        <span class="status pending"></span>
+                        <span class="patient-name">منى خالد</span>
+                        <span class="time">04:30 م</span>
+                        <span class="service">سونار</span>
+                    </li>
+                    <!-- Add more items as needed -->
+                </ul>
+            </aside>
+
+            <!-- Main area: Daily schedule table -->
+            <section class="daily-schedule">
+                <h2>الجدول اليومي</h2>
+                <div class="schedule-filter">
+                    <select>
+                        <option>اليوم</option>
+                        <option>الأسبوع</option>
+                        <option>الشهر</option>
+                    </select>
+                </div>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>المريض</th>
+                            <th>الخدمة</th>
+                            <th>الوقت</th>
+                            <th>الحالة</th>
+                            <th>إجراء</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>أمل محمد</td>
+                            <td>كشف نساء</td>
+                            <td>10:00 ص</td>
+                            <td class="status completed">مكتمل</td>
+                            <td><button class="action view">عرض</button></td>
+                        </tr>
+                        <tr>
+                            <td>سارة أحمد</td>
+                            <td>متابعة حمل</td>
+                            <td>11:30 ص</td>
+                            <td class="status in-progress">جاري</td>
+                            <td><button class="action edit">تعديل</button></td>
+                        </tr>
+                        <tr>
+                            <td>فاطمة حسن</td>
+                            <td>حقن مجهري</td>
+                            <td>02:00 م</td>
+                            <td class="status pending">قادم</td>
+                            <td><button class="action cancel">إلغاء</button></td>
+                        </tr>
+                        <tr>
+                            <td>منى خالد</td>
+                            <td>سونار</td>
+                            <td>04:30 م</td>
+                            <td class="status pending">قادم</td>
+                            <td><button class="action view">عرض</button></td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Right sidebar: Quick actions or menu -->
+            <aside class="right-sidebar">
+                <h3>إجراءات سريعة</h3>
+                <ul>
+                    <li><a href="#">إضافة مريض جديد</a></li>
+                    <li><a href="#">طباعة تقرير</a></li>
+                    <li><a href="#">إعدادات</a></li>
+                </ul>
+            </aside>
+
+        </div>
+    </section>
+
+    <!-- Bottom navigation bar -->
+    <nav class="bottom-nav">
+        <div class="container">
+            <a href="#" class="nav-item orange">
+                <span class="icon chart"></span>
+                تقارير
+            </a>
+            <a href="#" class="nav-item purple">
+                <span class="icon users"></span>
+                إدارة المرضى
+            </a>
+            <a href="#" class="nav-item green">
+                <span class="icon add"></span>
+                حجز جديد
+            </a>
+            <a href="#" class="nav-item blue">
+                <span class="icon settings"></span>
+                الإعدادات
+            </a>
+        </div>
+    </nav>
+
+</body>
+
+</html>

@@ -164,7 +164,7 @@ section {
   @apply py-15
 }
 
-.service-card {
+.service-card ,.testimonial-card {
   @apply bg-white dark:bg-dark-primary shadow-md rounded-2xl flex flex-col p-8 gap-4 justify-between hover:shadow-lg duration-500 hover:-translate-y-1;
 }
 
@@ -184,6 +184,14 @@ section {
 .service-card>div:first-of-type,
 .contact-item .contact-icon {
   @apply bg-bg-icon dark:bg-dark-bg-icon group-hover:scale-110 duration-500 w-16 h-16 flex items-center justify-center rounded-2xl;
+}
+
+.header-icon{
+@apply bg-bg-icon dark:bg-dark-ternary  text-2xl duration-500 w-16 h-16 flex items-center  justify-center rounded-2xl;
+}
+
+.msg-icon{
+  @apply bg-gray-300/20 text-2xl duration-500 w-16 h-16 flex items-center  justify-center rounded-2xl;
 }
 
 .contact-card > div:first-of-type{
@@ -275,3 +283,24 @@ section {
 .icon-color {
   @apply text-icon dark:text-dark-icon;
 }
+
+.cert-card{
+  @apply flex gap-4 p-4  px-6 items-center dark:bg-dark-secondary rounded-2xl border-1 border-gray-300 dark:border-gray-700/90 shadow-md shadow-black/10;
+}
+
+.cert-card p ,.exper-card p {
+  @apply text-text-secondary dark:text-dark-text-secondary text-sm;
+}
+
+.cert-card h3 ,.exper-card h3{
+  @apply text-xl   font-semibold;
+}
+
+.exper-card{
+@apply  flex flex-col  gap-4 p-7 w-full  px-6  dark:bg-dark-primary rounded-2xl border-1 border-gray-300 dark:border-gray-700/90 shadow-md shadow-black/10;
+}
+
+.exper-card time {
+  @apply px-4 py-1 w-fit bg-primary dark:bg-dark-ternary/70 rounded-2xl text-icon dark:text-dark-text-secondary ;
+}
+

@@ -76,7 +76,7 @@
     </header>
     <!-- nav of mobile -->
     <nav id="mobileNav" class=" hidden  fixed top-20 left-0 w-full bg-header dark:bg-dark-header
-          py-3 shadow-md z-60 lg:hidden ">
+            py-3 shadow-md z-60 lg:hidden ">
         <div class="container flex flex-col gap-2 pt-3 border-t-1 ">
             <a href="../index.html" class="mobile-nav-link">الرئيسية</a>
             <a href="../public/services.html" class="mobile-nav-link">الخدمات</a>
@@ -132,23 +132,23 @@
         </section>
 
         <!-- ====================== Tabs Navigation ====================== -->
-        <section class="about-tabs-nav border-b-1 border-gray-400 dark:border-gray-800 ">
-            <div class="container flex justify-center items-center ">
-                <div class="tabs-btns " role="tablist">
-                    <button role="tab" class="tab-btn" aria-selected="true" aria-controls="tab-profile">السيرة
-                        الذاتية</button>
-                    <button role="tab" class="tab-btn" aria-selected="false"
-                        aria-controls="tab-certificates">الشهادات</button>
-                    <button role="tab" class="tab-btn" aria-selected="false"
-                        aria-controls="tab-experience">الخبرة</button>
-                    <button role="tab" class="tab-btn" aria-selected="false" aria-controls="tab-timeline">المسار
-                        المهني</button>
+        <!-- <section class="about-tabs-nav border-b-1 border-gray-400 dark:border-gray-800 ">
+                <div class="container flex justify-center items-center ">
+                    <div class="tabs-btns" role="tablist">
+                        <button role="tab" class="tab-btn" aria-selected="true" aria-controls="tab-profile">السيرة
+                            الذاتية</button>
+                        <button role="tab" class="tab-btn" aria-selected="false"
+                            aria-controls="tab-certificates">الشهادات</button>
+                        <button role="tab" class="tab-btn" aria-selected="false"
+                            aria-controls="tab-experience">الخبرة</button>
+                        <button role="tab" class="tab-btn" aria-selected="false" aria-controls="tab-timeline">المسار
+                            المهني</button>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section> -->
 
         <!-- ====================== Tab Content: السيرة الذاتية ====================== -->
-        <section id="tab-profile" role="tabpanel" class="tab-content active">
+        <!-- <section id="tab-profile" role="tabpanel" class="tab-content active">
             <div class="container">
                 <h2 class="section-title">السيرة الذاتية</h2>
                 <p class="section-subtitle">رحلة طبية مليئة بالإنجازات والنجاحات في خدمة الأسر المصرية</p>
@@ -180,54 +180,153 @@
                 </div>
             </div>
             </ personalized>
-        </section>
+        </section> -->
 
-        <!-- ====================== Tab Content: الشهادات ====================== -->
-        <section id="tab-certificates" role="tabpanel" class="tab-content">
-            <div class="container">
-                <h2 class="section-title">الشهادات والمؤهلات العلمية</h2>
-                <div class="certificates-grid">
-                    <article class="cert-card">
-                        <h3>دكتوراه وماجستير نساء وتوليد</h3>
-                        <p>جامعة عين شمس - القاهرة</p>
+        <!-- ====================== Certificates ====================== -->
+        <section id="tab-certificates" role="tabpanel" class="tab-content bg">
+            <div class="container  ">
+                <div class="header-section  ">
+                    <div class="header-icon ">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h2 class="section-title">الشهادات والمؤهلات العلمية</h2>
+                    <p>حاصل على أرقى الشهادات الطبية المعتمدة محلياً ودولياً</p>
+                </div>
+                <div class="certificates-grid flex flex-col  m-auto  gap-6 mt-15 max-w-5xl">
+                    <article class="cert-card ">
+                        <div class="icon !w-12 !h-14 ">
+                            <i class="fas fa-award !text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold">دكتوراه وماجستير نساء وتوليد</h3>
+                            <p>جامعة عين شمس - القاهرة</p>
+                        </div>
                     </article>
-                    <article class="cert-card">
-                        <h3>زمالة الحقن المجهري والإخصاب</h3>
-                        <p>معهد الإخصاب - ميونخ، ألمانيا</p>
+                    <article class="cert-card ">
+                        <div class="icon !w-12 !h-14 ">
+                            <i class="fas fa-award !text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="">دكتوراه وماجستير نساء وتوليد</h3>
+                            <p class="text-text-secondary dark:text-dark-text-secondary text-sm">جامعة عين شمس - القاهرة
+                            </p>
+                        </div>
                     </article>
-                    <article class="cert-card">
-                        <h3>دبلوم المناظير النسائية المتقدمة</h3>
-                        <p>معهد لاباروسكوبي - باريس، فرنسا</p>
-                    </article>
-                    <article class="cert-card">
-                        <h3>عضوية الجمعية الأوروبية للخصوبة</h3>
-                        <p>ESHRE - عضو نشط منذ 2018</p>
+                    <article class="cert-card ">
+                        <div class="icon !w-12 !h-14 ">
+                            <i class="fas fa-award !text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold">دكتوراه وماجستير نساء وتوليد</h3>
+                            <p class="text-text-secondary dark:text-dark-text-secondary text-sm">جامعة عين شمس - القاهرة
+                            </p>
+                        </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- ====================== Tab Content: الخبرة ====================== -->
-        <section id="tab-experience" role="tabpanel" class="tab-content">
+        <!-- ====================== Experience ====================== -->
+        <section id="tab-experience" role="tabpanel" class="tab-content bg-ternary dark:bg-dark-secondary">
             <div class="container">
-                <h2 class="section-title">الخبرة العملية</h2>
-                <div class="timeline">
-                    <article class="timeline-item">
-                        <time>2023 - حتى الآن</time>
-                        <h3>استشاري نساء وتوليد وحقن مجهري</h3>
-                        <p>عيادات د. توأم الطبيب - مدينة نصر، القاهرة</p>
+                <div class="header-section  ">
+                    <div class="header-icon ">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h2 class="section-title">الخبرة العملية</h2>
+                    <p>رحلة مهنية حافلة بالإنجازات والنجاحات الطبية</p>
+                </div>
+
+                <div class="timeline flex flex-col  m-auto  gap-6 mt-15 max-w-5xl">
+                    <article class="timeline-item flex flex-row gap-7 ">
+                        <div class=" flex flex-col gap-4 items-center py-2">
+                            <div class="icon !w-12 !h-12  !rounded-full  ">
+                                <i class="fas fa-briefcase !text-xl"></i>
+                            </div>
+                            <div
+                                class="line border-1 border-icon dark:border-dark-icon opacity-70 !h-[calc(100%-60px)] bg-gray-400 dark:bg-gray-700 ">
+                            </div>
+                        </div>
+                        <div class="exper-card">
+                            <time>2023 - حتى الآن</time>
+                            <h3>استشاري نساء وتوليد وحقن مجهري</h3>
+                            <p>عيادات د. توأم الطبيب - مدينة نصر، القاهرة</p>
+                        </div>
                     </article>
-                    <article class="timeline-item">
-                        <time>2019 - 2023</time>
-                        <h3>استشاري أول - قسم الخصوبة</h3>
-                        <p>مستشفى الدمرداش الجامعي</p>
+                    <article class="timeline-item flex flex-row gap-7 ">
+                        <div class=" flex flex-col gap-4 items-center py-2">
+                            <div class="icon !w-12 !h-12  !rounded-full  ">
+                                <i class="fas fa-briefcase !text-xl"></i>
+                            </div>
+                            <div
+                                class="line border-1 border-icon dark:border-dark-icon opacity-70 !h-[calc(100%-60px)] bg-gray-400 dark:bg-gray-700 ">
+                            </div>
+                        </div>
+                        <div class="exper-card">
+                            <time>2023 - حتى الآن</time>
+                            <h3>استشاري نساء وتوليد وحقن مجهري</h3>
+                            <p>عيادات د. توأم الطبيب - مدينة نصر، القاهرة</p>
+                        </div>
                     </article>
-                    <article class="timeline-item">
-                        <time>2015 - 2019</time>
-                        <h3>تخصص الحقن المجهري والمناظير</h3>
-                        <p>معهد الإخصاب - ألمانيا وفرنسا</p>
+                    <article class="timeline-item flex flex-row gap-7 ">
+                        <div class=" flex flex-col gap-4 items-center py-2">
+                            <div class="icon !w-12 !h-12  !rounded-full  ">
+                                <i class="fas fa-briefcase !text-xl"></i>
+                            </div>
+                            <div
+                                class="line border-1 border-icon dark:border-dark-icon opacity-70 !h-[calc(100%-60px)] bg-gray-400 dark:bg-gray-700 ">
+                            </div>
+                        </div>
+                        <div class="exper-card">
+                            <time>2023 - حتى الآن</time>
+                            <h3>استشاري نساء وتوليد وحقن مجهري</h3>
+                            <p>عيادات د. توأم الطبيب - مدينة نصر، القاهرة</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item flex flex-row gap-7 ">
+                        <div class=" flex flex-col gap-4 items-center py-2">
+                            <div class="icon !w-12 !h-12  !rounded-full  ">
+                                <i class="fas fa-briefcase !text-xl"></i>
+                            </div>
+                            <!-- <div class="line border-1 border-icon dark:border-dark-icon opacity-70 !h-[calc(100%-60px)] bg-gray-400 dark:bg-gray-700 "></div> -->
+                        </div>
+                        <div class="exper-card">
+                            <time>2023 - حتى الآن</time>
+                            <h3>استشاري نساء وتوليد وحقن مجهري</h3>
+                            <p>عيادات د. توأم الطبيب - مدينة نصر، القاهرة</p>
+                        </div>
                     </article>
                 </div>
+            </div>
+        </section>
+
+        <!-- ====================== Our msg ====================== -->
+        <section class="py-15">
+            <div class="container grid grid-cols-1 lg:grid-cols-2 gap-15 justify-center items-center">
+                <div class="bg-grad rounded-3xl p-10 text-white">
+                    <div class=" flex flex-col gap-6 justify-between ">
+                        <div class="msg-icon ">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h2 class="text-4xl">رسالتنا</h2>
+                        <p class="text-white/80 text-xl">نلتزم بتقديم رعاية صحية شاملة ومتميزة لجميع المرضى، مع الحفاظ
+                            على أعلى معايير الجودة
+                            والسلامة، واستخدام أحدث التقنيات الطبية لضمان أفضل النتائج العلاجية.</p>
+                    </div>
+                </div>
+                <div class="bg-grad rounded-3xl p-10 text-white">
+                    <div class=" flex flex-col gap-6 justify-between ">
+                        <div class="msg-icon ">
+                            <i class="fas fas fa-eye"></i>
+                        </div>
+                        <h2 class="text-4xl">رؤيتنا</h2>
+                        <p class="text-white/80 text-xl">أن نكون المرجع الأول في تقديم الخدمات الطبية المتميزة
+                            والموثوقة، ونساهم في تحسين جودة الحياة الصحية لجميع مرضانا من خلال الابتكار والتطوير
+                            المستمر.
+                        </p>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
 
@@ -390,6 +489,8 @@
             toggleNavBtn.querySelector('i').classList.toggle('fa-bars');
         });
     </script>
+
+    <script src="../js/about.js"></script>
 
 </body>
 

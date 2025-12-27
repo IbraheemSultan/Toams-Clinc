@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark" class="scroll-smooth duration-500" locale="ar-EG" loading="lazy">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> دكتور تؤأم - الخدمات الطبية</title>
+
+    <!-- fontawesome  cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- style cdn  -->
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <!-- aos cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+    <!-- favicons  -->
+    <link rel="icon" type="image/png" href="../Favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../Favicons/favicon.svg" />
+    <link rel="shortcut icon" href="../Favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../Favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Toams" />
+    <link rel="manifest" href="../Favicons/site.webmanifest" />
+
+    <!-- meta desc -->
+    <meta name="description"
+        content="د. محمود رأفت - استشاري نساء وتوليد وتأخر إنجاب وأطفال الأنابيب وحقن مجهري في اسيوط  مصر">
+</head>
+
+<body>
+
+    <!-- Main dashboard container with dark background -->
+    <div class="dashboard">
+
+        <!-- Top header bar with gradient blue -->
+        <header class="top-header">
+            <div class="header-content">
+                <h1>مرحبا بك في لوحة التحكم</h1>
+                <p>إدارة عيادتك بكل سهولة - حجوزات اليوم، المرضى، والإحصائيات</p>
+            </div>
+        </header>
+
+        <!-- Stats cards row -->
+        <section class="stats-row">
+            <div class="stat-card">
+                <span class="icon">📅</span>
+                <p>إجمالي الحجوزات اليوم</p>
+                <strong>245</strong>
+            </div>
+            <div class="stat-card">
+                <span class="icon">🟢</span>
+                <p>الحجوزات المؤكدة</p>
+                <strong>8</strong>
+            </div>
+            <div class="stat-card">
+                <span class="icon">⚪</span>
+                <p>في الانتظار</p>
+                <strong>12</strong>
+            </div>
+        </section>
+
+        <!-- Main content area with two columns -->
+        <section class="main-content">
+
+            <!-- Left column - Today's appointments list -->
+            <aside class="left-sidebar">
+                <h2>حجوزات اليوم</h2>
+                <ul class="appointments-list">
+                    <li class="appointment-item">
+                        <span class="time">10:00 ص</span>
+                        <span class="patient">أمل محمد علي</span>
+                        <span class="status completed">مكتمل</span>
+                    </li>
+                    <li class="appointment-item">
+                        <span class="time">11:30 ص</span>
+                        <span class="patient">سارة أحمد</span>
+                        <span class="status in-progress">جاري</span>
+                    </li>
+                    <li class="appointment-item">
+                        <span class="time">02:00 م</span>
+                        <span class="patient">فاطمة حسن</span>
+                        <span class="status upcoming">قادم</span>
+                    </li>
+                    <li class="appointment-item">
+                        <span class="time">04:30 م</span>
+                        <span class="patient">منى خالد</span>
+                        <span class="status upcoming">قادم</span>
+                    </li>
+                </ul>
+            </aside>
+
+            <!-- Right column - Today's schedule -->
+            <section class="schedule-section">
+                <h2>الجدول اليومي</h2>
+                <div class="schedule-card">
+                    <div class="schedule-header">
+                        <span>اليوم: الجمعة</span>
+                        <span>التاريخ: 26 ديسمبر 2025</span>
+                    </div>
+                    <ul class="schedule-list">
+                        <li>
+                            <span class="time">10:00 ص - 11:00 ص</span>
+                            <span class="patient">أمل محمد</span>
+                            <button class="action-btn view">عرض</button>
+                        </li>
+                        <li>
+                            <span class="time">11:30 ص - 12:30 م</span>
+                            <span class="patient">سارة أحمد</span>
+                            <button class="action-btn view">عرض</button>
+                        </li>
+                        <li>
+                            <span class="time">02:00 م - 03:00 م</span>
+                            <span class="patient">فاطمة حسن</span>
+                            <button class="action-btn edit">تعديل</button>
+                        </li>
+                        <li>
+                            <span class="time">04:30 م - 05:30 م</span>
+                            <span class="patient">منى خالد</span>
+                            <button class="action-btn cancel">إلغاء</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+        <!-- Bottom navigation bar with colored buttons -->
+        <nav class="bottom-nav">
+            <button class="nav-btn orange">
+                <span class="icon">📊</span>
+                تقارير يومية
+            </button>
+            <button class="nav-btn purple">
+                <span class="icon">👥</span>
+                إدارة المرضى
+            </button>
+            <button class="nav-btn green">
+                <span class="icon">📅</span>
+                حجز جديد
+            </button>
+            <button class="nav-btn blue">
+                <span class="icon">⚙️</span>
+                الإعدادات
+            </button>
+        </nav>
+
+        <!-- Right sidebar menu (visible on larger screens) -->
+        <aside class="right-sidebar">
+            <h3>القائمة السريعة</h3>
+            <ul>
+                <li><a href="#">لوحة التحكم الرئيسية</a></li>
+                <li><a href="#">إدارة الحجوزات</a></li>
+                <li><a href="#">قاعدة بيانات المرضى</a></li>
+                <li><a href="#">التقارير المالية</a></li>
+                <li><a href="#">إعدادات العيادة</a></li>
+                <li><a href="#">تسجيل الخروج</a></li>
+            </ul>
+        </aside>
+
+    </div>
+
+</body>
+</html>

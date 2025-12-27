@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark" class="scroll-smooth duration-500" locale="ar-EG" loading="lazy">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> دكتور تؤأم - الخدمات الطبية</title>
+
+    <!-- fontawesome  cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- style cdn  -->
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <!-- aos cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+    <!-- favicons  -->
+    <link rel="icon" type="image/png" href="../Favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../Favicons/favicon.svg" />
+    <link rel="shortcut icon" href="../Favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../Favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Toams" />
+    <link rel="manifest" href="../Favicons/site.webmanifest" />
+
+    <!-- meta desc -->
+    <meta name="description"
+        content="د. محمود رأفت - استشاري نساء وتوليد وتأخر إنجاب وأطفال الأنابيب وحقن مجهري في اسيوط  مصر">
+</head>
+
+<body>
+    <div class="login-container">
+        <!-- الشعار -->
+        <div class="logo">
+            <img src="logo-app.png" alt="شعار عيادة د. توأم">
+        </div>
+
+        <!-- العنوان -->
+        <h1>عيادة دكتور توأم</h1>
+        <p class="subtitle">لوحة تحكم العيادة</p>
+
+        <!-- رسالة ترحيب -->
+        <p class="welcome">الرجاء الدخول أو اسم المستخدم</p>
+
+        <!-- نموذج تسجيل الدخول -->
+        <form class="login-form">
+            <div class="input-group">
+                <input type="email" placeholder="أدخل البريد الإلكتروني" required>
+                <span class="icon user-icon"></span>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" placeholder="أدخل كلمة المرور" required>
+                <span class="icon eye-icon" onclick="togglePassword()"></span>
+            </div>
+
+            <p class="error-message">يرجى إدخال البريد الإلكتروني وكلمة المرور</p>
+
+            <button type="submit" class="btn-login">تسجيل الدخول</button>
+        </form>
+
+        <!-- حقوق النشر -->
+        <p class="copyright">© 2025 عيادة دكتور توأم جميع الحقوق محفوظة</p>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const password = document.getElementById('password');
+            const eye = document.querySelector('.eye-icon');
+            if (password.type === 'password') {
+                password.type = 'text';
+                eye.classList.add('visible');
+            } else {
+                password.type = 'password';
+                eye.classList.remove('visible');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
